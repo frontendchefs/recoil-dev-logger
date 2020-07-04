@@ -16,5 +16,8 @@
     "url": "https://github.com/frontendchefs/recoil-dev-logger/issues"
   },
   "homepage": "https://github.com/frontendchefs/recoil-dev-logger#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "recoil": "^0.0.10"
+  }
 }
