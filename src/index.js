@@ -8,7 +8,9 @@ function RecoilLogger() {
             console.log('Atom Value', e.atomValues.get(name));
             console.log('Previous Atom Value', e.previousAtomValues.get(name));
         })
-    })
+    });
+
+    return null;
 }
 
 export default RecoilLogger;
