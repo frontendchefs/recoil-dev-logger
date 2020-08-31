@@ -2,11 +2,11 @@ import { useTransactionObservation_UNSTABLE } from 'recoil';
 
 
 function RecoilLogger() {
-    useTransactionObservation_UNSTABLE((e) => {
-        e.modifiedAtoms.forEach((name) => {
+    useTransactionObservation_UNSTABLE((event) => {
+        event.modifiedAtoms.forEach((name) => {
             console.log('Action Name', name);
-            console.log('Atom Value', e.atomValues.get(name));
-            console.log('Previous Atom Value', e.previousAtomValues.get(name));
+            console.log('Atom Value', event.atomValues.get(name));
+            console.log('Previous Atom Value', event.previousAtomValues.get(name));
         })
     });
 
